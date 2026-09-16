@@ -54,7 +54,7 @@ Hence, persons $1$ and $3$ share a row in this instance, so there are $2$ people
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T14:48:08.969Z  
+**Submitted:** 2026-09-16T14:51:36.772Z  
 
 ```java
 import java.util.*;
@@ -66,8 +66,20 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		while (T--) {
+        int N = sc.nextInt();
+        int K = sc.nextInt();
 
-	}
+        if (K <= N) {
+            System.out.printf("0\n");
+        } else {
+            System.out.printf("%d\n", 2 * (K - N));
+        }
+    }
+
+}
+	
 }
 
 ```
