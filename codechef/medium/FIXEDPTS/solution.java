@@ -13,7 +13,7 @@ class Codechef
 		    int N = sc.nextInt();
 		    int K = sc.nextInt();
 		    
-		    if(K<N){
+		    if(K==N ||N-K >=2){
 		        System.out.println("Yes");
 		    }
 		    else{
