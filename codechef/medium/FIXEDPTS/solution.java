@@ -13,8 +13,8 @@ class Codechef
 		    int N = sc.nextInt();
 		    int K = sc.nextInt();
 		    
-		    if(K>N){
-		        System.out.println;("Yes");
+		    if(K<N){
+		        System.out.println("Yes");
 		    }
 		    else{
 		        System.out.println("NO");
