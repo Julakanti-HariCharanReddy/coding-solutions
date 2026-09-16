@@ -55,7 +55,7 @@ Yes
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T15:00:27.390Z  
+**Submitted:** 2026-09-16T15:01:20.597Z  
 
 ```java
 import java.util.*;
@@ -73,8 +73,8 @@ class Codechef
 		    int N = sc.nextInt();
 		    int K = sc.nextInt();
 		    
-		    if(K>N){
-		        System.out.println;("Yes");
+		    if(K<N){
+		        System.out.println("Yes");
 		    }
 		    else{
 		        System.out.println("NO");
