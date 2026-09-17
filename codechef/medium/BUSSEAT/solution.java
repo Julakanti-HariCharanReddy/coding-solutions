@@ -9,7 +9,7 @@ class Codechef
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
-		while (T--) {
+		while (T-->0) {
         int N = sc.nextInt();
         int K = sc.nextInt();
 
