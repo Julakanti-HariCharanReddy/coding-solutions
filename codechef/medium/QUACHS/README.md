@@ -71,7 +71,7 @@ Therefore, $100-40=60$ chips remain.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:00:16.571Z  
+**Submitted:** 2026-09-21T14:01:43.133Z  
 
 ```java
 import java.util.*;
@@ -84,13 +84,13 @@ class Codechef
 	{
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
-		int a[];
-		int n = sc.nextInt();
+		int a[] = new int[3];
+	
 		int sum = 0;
-		for (int i = 0;i < n ;i++ ){
+		for (int i = 0;i < 3 ;i++ ){
 		    a[i] = sc.nextInt();
 		} 
-		for (int i = 0;i < n-1 ;i++ ){
+		for (int i = 0;i < 2 ;i++ ){
 		    sum = sum  + a[i];
 		} 
 		int mul = 2*a[2];
