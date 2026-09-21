@@ -7,7 +7,7 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		Scanner sc = new Scaner(System.in);
+		Scanner sc = new Scanner(System.in);
 		int a[];
 		int n = sc.nextInt();
 		int sum = 0;
