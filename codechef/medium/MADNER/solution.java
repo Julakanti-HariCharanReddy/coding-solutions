@@ -1,6 +1,5 @@
 class Solution {
-    public void solve(Scanner sc) {
-        String s = sc.next();
+    public int findMaximumPairs(String s) {
         int pairs = 0;
         int i = 0;
         int n = s.length();
@@ -13,6 +12,6 @@ class Solution {
                 i++;
             }
         }
-        System.out.println(pairs);
+        return pairs;
     }
 }
