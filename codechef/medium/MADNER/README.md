@@ -73,7 +73,7 @@ xyyyx
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:49:04.773Z  
+**Submitted:** 2026-09-21T14:50:07.938Z  
 
 ```java
 import java.util.Scanner;
@@ -84,7 +84,7 @@ class Solution {
         int pairs = 0;
         int i = 0;
         int n = s.length();
-        
+
         while (i < n - 1) {
             if (s.charAt(i) != s.charAt(i + 1)) {
                 pairs++;
@@ -97,7 +97,7 @@ class Solution {
     }
 }
 
-public class Codechef {
+ class Codechef {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         if (sc.hasNextInt()) {
@@ -111,7 +111,6 @@ public class Codechef {
         sc.close();
     }
 }
-
 ```
 
 ---
