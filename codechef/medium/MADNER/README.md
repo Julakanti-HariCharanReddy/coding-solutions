@@ -73,7 +73,7 @@ xyyyx
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:50:07.938Z  
+**Submitted:** 2026-09-21T14:49:29.778Z  
 
 ```java
 import java.util.Scanner;
@@ -97,7 +97,7 @@ class Solution {
     }
 }
 
- class Codechef {
+public class Codechef {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         if (sc.hasNextInt()) {
