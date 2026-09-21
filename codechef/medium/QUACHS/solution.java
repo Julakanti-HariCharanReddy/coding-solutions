@@ -8,13 +8,13 @@ class Codechef
 	{
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
-		int a[] = new int[];
-		int n = sc.nextInt();
+		int a[] = new int[3];
+	
 		int sum = 0;
-		for (int i = 0;i < n ;i++ ){
+		for (int i = 0;i < 3 ;i++ ){
 		    a[i] = sc.nextInt();
 		} 
-		for (int i = 0;i < n-1 ;i++ ){
+		for (int i = 0;i < 2 ;i++ ){
 		    sum = sum  + a[i];
 		} 
 		int mul = 2*a[2];
