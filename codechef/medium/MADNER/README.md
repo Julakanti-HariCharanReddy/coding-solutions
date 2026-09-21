@@ -73,12 +73,11 @@ xyyyx
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:52:07.296Z  
+**Submitted:** 2026-09-21T14:52:19.454Z  
 
 ```java
 class Solution {
-    public void solve(Scanner sc) {
-        String s = sc.next();
+    public int findMaximumPairs(String s) {
         int pairs = 0;
         int i = 0;
         int n = s.length();
@@ -91,7 +90,7 @@ class Solution {
                 i++;
             }
         }
-        System.out.println(pairs);
+        return pairs;
     }
 }
 
