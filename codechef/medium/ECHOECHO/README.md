@@ -63,18 +63,15 @@ The second character of `ever` is `v`, while its fourth character is `r`. These 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:57:46.246Z  
+**Submitted:** 2026-09-23T15:59:42.950Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
 	// your code goes here
-	char a[4];
-	for(int i = 0; i<4;i++){
-	    scanf("%c",&a[i]);
-	    
-	}
+	char *a[4];
+	  scanf("%s", a); 
 	if(a[0] == a[2]){
 	    if(a[1] == a[3]){
 	        printf("Yes");
