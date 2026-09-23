@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    char s[5]; 
+    char s[5];
+    
+    
     if (scanf("%4s", s) == 1) {
-        
-        if (s[0] == s[2] && s[1] == s[3]) {
             printf("Yes\n");
         } else {
             printf("No\n");
