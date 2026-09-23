@@ -36,37 +36,30 @@ Output: 9
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-09-23T10:21:24.312Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 47.7 MB (beats 65.78%)  
+**Submitted:** 2026-09-23T10:27:54.188Z  
 
 ```java
 class Solution {
     public int trap(int[] height) {
-        int n = height.length-1;
-        int lm = height[0];
-        int rm = height[n];
         int l = 0;
         int r = height.length-1;
+         int lm = height[l];
+        int rm = height[r];
         int temp = 0;
 
-        while(l<=r){
-            if (lm > height[l]){
-                temp  = lm - height[l] + temp;
-                //lm= Math.max(lm,height[l]);
-                l++;
-            }else{
-                 lm= Math.max(lm,height[l]);
-                r--;
-            }
-            if(rm > height[r]){
-                temp = rm - height[r] + temp;
-                //rm= Math.max(rm,height[r]);
-                r--;
-            }else{
-                l++;
-                  rm= Math.max(rm,height[r]);
-            }
+        while(l<r){
+           if(lm < rm){
+            l++;
+            lm = Math.max(lm,height[l]);
+            temp += lm - height[l];
+           }
+           else{
+            r--;
+            rm = Math.max(rm, height[r]);
+            temp += rm - height[r];
+             }
         }
         return temp;
 
