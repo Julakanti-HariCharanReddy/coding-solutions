@@ -5,7 +5,7 @@ int main() {
     if (scanf("%d", &T) == 1) {
         while (T--) {
             int N, K;
-            scanf("%d %d", &N, &K)
+            scanf("%d %d", &N, &K);
             int tmin = N + (N - 1) / (K - 1);
             printf("%d\n", tmin);
         }
