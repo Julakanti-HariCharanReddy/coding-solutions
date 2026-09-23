@@ -66,25 +66,23 @@ Chef can work on minutes $1, 2, 4, 5, 7$ to put up the net; so the answer is $7$
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T16:12:24.275Z  
+**Submitted:** 2026-09-23T16:17:04.331Z  
 
 ```c_cpp
 #include <stdio.h>
 
 int main() {
-	// your code goes here
-	int t,n,m;
-	scanf("%d",t);
-	while(t>0){
-	    
-	    scanf("%d",&n);
-	    scanf("%d",&m);
-	    
-	    t--;
-	}
-
+    int T;
+    if (scanf("%d", &T) == 1) {
+        while (T--) {
+            int N, K;
+            scanf("%d %d", &N, &K)
+            int tmin = N + (N - 1) / (K - 1);
+            printf("%d\n", tmin);
+        }
+    }
+    return 0;
 }
-
 
 ```
 
