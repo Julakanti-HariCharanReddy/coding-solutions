@@ -2,11 +2,8 @@
 
 int main() {
 	// your code goes here
-	char a[4];
-	for(int i = 0; i<4;i++){
-	    scanf("%c",&a[i]);
-	    
-	}
+	char *a[4];
+	  scanf("%s", a); 
 	if(a[0] == a[2]){
 	    if(a[1] == a[3]){
 	        printf("Yes");
