@@ -2,10 +2,15 @@
 
 int main() {
 	// your code goes here
-	char *str[4];
-	  scanf("%s", &str); 
-	if(str[0] == str[2] && str[1] == str[3]){
-	    printf("Yes");
+	char a[4];
+	for(int i = 0; i<4;i++){
+	    scanf("%c",&a[i]);
+	    
+	}
+	if(a[0] == a[2]){
+	    if(a[1] == a[3]){
+	        printf("Yes");
+	    }
 	}
 	else{
 	    printf("No");
