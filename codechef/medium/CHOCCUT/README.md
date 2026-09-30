@@ -54,7 +54,7 @@ No
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:43:03.950Z  
+**Submitted:** 2026-09-30T14:46:02.095Z  
 
 ```java
 import java.util.*;
@@ -69,10 +69,16 @@ class Codechef
 Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		
-		while(n--){
+		while(n-->0){
 		    int p = sc.nextInt();
 		    int z = sc.nextInt();
-		    
+		    int g = p*z;
+		    if(g%2==0){
+		        System.out.println("Yes");
+		    }
+		    else{
+		        System.out.println("No");
+		    }
 		}
 
 	}
