@@ -17,7 +17,16 @@ class Codechef
 		        a[i] = sc.nextInt();
 		        
 		    }
+		    Arrays.sort(a);
 		    
+		    int m = 0 , s = 0;
+		    for(int j = 0 ; j < n; j++){
+		        if(a[j]!=a[s]){
+		            s = j;
+		        }
+		        m = Math.max(m,j-s+1);
+		    }
+		    System.out.println(n-m);
 		}
 
 	}
