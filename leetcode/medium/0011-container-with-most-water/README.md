@@ -43,8 +43,8 @@ Output: 1
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-09-30T01:55:11.208Z  
+**Memory:** 42.6 MB  
+**Submitted:** 2026-09-30T01:55:21.108Z  
 
 ```java
 class Solution {
@@ -56,7 +56,7 @@ class Solution {
         int temp = 0;
 int c = 0 ; 
         while(l<r){
-           if(lm <= rm){
+           if(lm < rm){
             l++;
             lm = Math.max(lm,height[l]);
            // temp += lm - height[l];
