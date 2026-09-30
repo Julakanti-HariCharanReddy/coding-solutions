@@ -8,7 +8,17 @@ class Codechef
 	{
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
-		int t = 
+		int t = sc.nextInt();
+		
+		while(t-->0){
+		    int p = sc.nextInt();
+		    int n[] = new int[n];
+		    
+		    for(int i = 0;i<n;i++){
+		        n[i] = scc.nextInt();
+		    }
+		    
+		}
 
 	}
 }
