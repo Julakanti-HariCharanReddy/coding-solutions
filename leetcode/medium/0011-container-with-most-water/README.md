@@ -42,38 +42,30 @@ Output: 1
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-09-30T01:55:21.108Z  
+**Runtime:** 5 ms (beats 82.56%)  
+**Memory:** 77.5 MB (beats 29.40%)  
+**Submitted:** 2026-09-30T02:13:10.770Z  
 
 ```java
 class Solution {
     public int maxArea(int[] height) {
-         int l = 0;
-        int r = height.length-1;
-         int lm = height[l];
-        int rm = height[r];
-        int temp = 0;
-int c = 0 ; 
-        while(l<r){
-           if(lm < rm){
-            l++;
-            lm = Math.max(lm,height[l]);
-           // temp += lm - height[l];
-           }
-           else{
-            r--;
-            rm = Math.max(rm, height[r]);
-            //temp += rm - height[r];
-             }
-             int w = r-l;
-             temp = Math.min(lm,rm)*w;
-             if(temp > c){
-                c = temp;
-             }
-        }
-           
-        return c ;
+       int n = height.length-1;
+       int l = 0;
+       int r = n;
+       int maxw = 0;
+       while(l<r){
+        int w = r - l ;
+        int curh = Math.min(height[l],height[r]);
+        int curA = curh * w;
+        maxw = Math.max(maxw,curA);
+
+        if(height[l]<height[r]){
+l++;
+       }else{
+        r--;
+       }
+       }
+       return maxw;
     }
 }
 ```
