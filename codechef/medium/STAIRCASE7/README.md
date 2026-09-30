@@ -58,7 +58,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:00:58.932Z  
+**Submitted:** 2026-09-30T15:05:18.764Z  
 
 ```java
 import java.util.*;
@@ -80,7 +80,16 @@ class Codechef
 		        a[i] = sc.nextInt();
 		        
 		    }
+		    Arrays.sort(a);
 		    
+		    int m = 0 , s = 0;
+		    for(int j = 0 ; j < n; j++){
+		        if(a[j]!=a[s]){
+		            s = j;
+		        }
+		        m = Math.max(m,j-s+1);
+		    }
+		    System.out.println(n-m);
 		}
 
 	}
