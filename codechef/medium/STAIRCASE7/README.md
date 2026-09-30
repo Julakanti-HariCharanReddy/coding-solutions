@@ -58,7 +58,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:05:50.950Z  
+**Submitted:** 2026-09-30T15:06:15.867Z  
 
 ```java
 import java.util.*;
@@ -77,7 +77,7 @@ class Codechef
 		    int a[]= new int[n];
 		    
 		    for(int i = 0; i<n; i++){
-		        a[i] = sc.nextInt();
+		        a[i] = sc.nextInt() -i;
 		        
 		    }
 		    Arrays.sort(a);
