@@ -14,7 +14,7 @@ class Codechef
 		    int a[]= new int[n];
 		    
 		    for(int i = 0; i<n; i++){
-		        a[i] = sc.nextInt() -i;
+		        a[i] = sc.nextInt();
 		        
 		    }
 		    Arrays.sort(a);
