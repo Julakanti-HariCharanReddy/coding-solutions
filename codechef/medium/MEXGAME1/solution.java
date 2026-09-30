@@ -8,17 +8,18 @@ class Codechef
 	{
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
-		if (!sc.hasNextInt()) return;
-        int t = sc.nextInt();
-        
-        while (t-- > 0) {
+		int t = sc.nextInt();
+		
+	while (t-- > 0) {
             int n = sc.nextInt();
-            int[] count = new int[105];
+            int[] count = new int[105]; // Increased size to safely handle values up to 100
             for (int i = 0; i < n; i++) count[sc.nextInt()]++;
             
+            // Find MEX
             int mex = 0;
             while (count[mex] > 0) mex++;
             
+            // Count total game moves
             long moves = 0;
             for (int i = 0; i < 105; i++) {
                 if (i < mex && count[i] > 1) moves += (long) (count[i] - 1) * i;
@@ -27,7 +28,6 @@ class Codechef
             
             System.out.println(moves % 2 != 0 ? "Alice" : "Bob");
         }
-        sc.close();
 
 	}
 }
