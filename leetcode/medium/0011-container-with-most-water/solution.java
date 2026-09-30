@@ -7,7 +7,7 @@ class Solution {
         int temp = 0;
 int c = 0 ; 
         while(l<r){
-           if(lm <= rm){
+           if(lm < rm){
             l++;
             lm = Math.max(lm,height[l]);
            // temp += lm - height[l];
