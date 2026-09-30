@@ -64,7 +64,7 @@ Alice
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:36:27.736Z  
+**Submitted:** 2026-09-30T15:39:43.942Z  
 
 ```java
 import java.util.*;
@@ -77,7 +77,17 @@ class Codechef
 	{
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
-		int t = 
+		int t = sc.nextInt();
+		
+		while(t-->0){
+		    int p = sc.nextInt();
+		    int n[] = new int[n];
+		    
+		    for(int i = 0;i<n;i++){
+		        n[i] = scc.nextInt();
+		    }
+		    
+		}
 
 	}
 }
