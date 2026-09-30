@@ -56,7 +56,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:48:49.731Z  
+**Submitted:** 2026-09-30T14:55:17.283Z  
 
 ```java
 import java.util.*;
@@ -72,6 +72,24 @@ class Codechef
 		int t = sc.nextInt();
 		while(t-->0){
 		    
+		    int n = sc.nextInt();
+		    int m = sc.nextInt();
+		    int k = sc.nextInt();
+		    
+		    int a[] = new int[m];
+		    for(int i = 0; i<m;i++){
+		        a[i] = sc.nextInt();
+		    }
+		    int d = 0 , count = 0;
+		    for(int seat = 1 ; seat<=n&&count < k;seat++){
+		        if (d< m && seat == a[d]) {
+                    d++;
+                } else {
+                    System.out.print(seat + " ");
+                    count++;
+                }
+		    }
+		    System.out.println();
 		}
 
 	}
