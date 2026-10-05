@@ -52,7 +52,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T15:22:27.320Z  
+**Submitted:** 2026-10-05T15:25:44.206Z  
 
 ```java
 import java.util.*;
@@ -72,24 +72,20 @@ class Codechef
 		while(t-->0){
 		    int n = sc.nextInt();
 		    int p[] = new int[n];
-		    int r = p[0];
+		    
 		    int sum = 0;
 		    for(int m = 0;m<n;m++){
 		        p[m]=sc.nextInt();
-		        r = Math.min(r,p[m]);
+		       // r = Math.min(r,p[m]);
+		       sum+=p[m];
 		    }
-		    for(int i = 0 ; i<n;i++){
-		       
+		     int r = p[0];
+            for(int m = 1; m < n; m++){
+                r = Math.min(r, p[m]);
+            }
+            
+             System.out.println(sum - r);
 		    
-		    
-		    if(p[i] == r){
-		        continue;
-		    }else{
-		        sum+=p[i];
-		    }
-		    }   
-		    
-		    System.out.println(sum);
 		}
 		}
 
