@@ -52,7 +52,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T15:04:49.698Z  
+**Submitted:** 2026-10-05T15:22:27.320Z  
 
 ```java
 import java.util.*;
@@ -66,10 +66,34 @@ class Codechef
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
 		
+		int t = sc.nextInt();
 		
 
+		while(t-->0){
+		    int n = sc.nextInt();
+		    int p[] = new int[n];
+		    int r = p[0];
+		    int sum = 0;
+		    for(int m = 0;m<n;m++){
+		        p[m]=sc.nextInt();
+		        r = Math.min(r,p[m]);
+		    }
+		    for(int i = 0 ; i<n;i++){
+		       
+		    
+		    
+		    if(p[i] == r){
+		        continue;
+		    }else{
+		        sum+=p[i];
+		    }
+		    }   
+		    
+		    System.out.println(sum);
+		}
+		}
+
 	}
-}
 
 ```
 
