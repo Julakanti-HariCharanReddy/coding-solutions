@@ -7,7 +7,7 @@ System.arraycopy(nums1,0,result,0,nums1.length);
         Arrays.sort(result);
 
         int n = result.length;
-        int median;
+     //   int median;
 
         if(n%2==0){
             return (double) (result[n / 2 - 1] + result[n / 2]) / 2.0;
