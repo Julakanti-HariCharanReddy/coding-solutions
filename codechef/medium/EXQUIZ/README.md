@@ -57,7 +57,7 @@ Test case $4$: Since the final score is $0$, all questions can be skipped.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T16:19:15.147Z  
+**Submitted:** 2026-10-21T16:24:15.122Z  
 
 ```java
 import java.util.*;
@@ -70,7 +70,26 @@ class Codechef
 	{
 		// your code goes here
 	Scanner sc = new Scanner(System.in);
+	int t = sc.nextInt();
 	
+	while(t-->0){
+	    int n = sc.nextInt();
+	    int s = sc.nextInt();
+	    
+	    int p = (s+3)/4;
+	    
+	    int a = -1;
+	    
+	    for(int i = p;i<=n;i++){
+	        int w = 4*i -s;
+	        if(i+w<=n){
+	            a = w+i;
+	        }
+	        
+	    }
+	    
+	    System.out.println(a);
+	}
 	}
 }
 
