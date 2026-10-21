@@ -61,7 +61,7 @@ Test case $1$: Inviting the groups with $1$ and $2$ people gives $3$ people and 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:32:56.519Z  
+**Submitted:** 2026-10-21T15:33:04.323Z  
 
 ```java
 import java.util.*;
