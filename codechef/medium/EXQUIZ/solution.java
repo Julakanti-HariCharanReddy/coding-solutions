@@ -22,6 +22,7 @@ class Codechef
 	        int w = 4*i -s;
 	        if(i+w<=n){
 	            a = w+i;
+	            break;
 	        }
 	        
 	    }
